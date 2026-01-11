@@ -1,0 +1,26 @@
+{
+  "name": "music-preview-generator",
+  "version": "0.1.0",
+  "description": "Electron app to generate music previews and upload to S3/CloudFront",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dev": "electron .",
+    "lint": "echo 'No lint configured'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.0.0",
+    "dotenv": "^10.0.0",
+    "ffmpeg-static": "^4.4.0",
+    "fluent-ffmpeg": "^2.1.2",
+    "mime-types": "^2.1.35",
+    "music-metadata": "^7.14.0",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "electron": "^25.0.0"
+  }
+}

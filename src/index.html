@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Music Preview Generator</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Music Preview Generator</h1>
+      <div class="controls">
+        <button id="selectBtn">Select Audio File</button>
+        <div id="fileName" class="muted">No file selected</div>
+        <label>Preview length (sec): <input id="win" type="number" value="30" min="5" max="120" /></label>
+        <label>Step (sec): <input id="step" type="number" value="10" min="1" max="60" /></label>
+        <button id="runBtn" disabled>Analyze & Upload</button>
+      </div>
+
+      <div id="status" class="status">Idle</div>
+      <div id="result" class="result"></div>
+    </div>
+
+    <script src="./renderer.js"></script>
+  </body>
+</html>
