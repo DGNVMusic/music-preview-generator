@@ -1,0 +1,10 @@
+node_modules
+dist
+.env
+.vscode
+.hintrc
+.DS_Store
+*.mp3
+*.wav
+*.flac
+temp/
